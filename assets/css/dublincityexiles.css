@@ -11,6 +11,17 @@
     color: #E39B27;
 }
 
+.dce-post-link{
+    color: #084a37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dce-post-link:hover,
+.dce-post-link:focus {
+    color: #066161;
+}
+
 .dce-dropdownmenu {
     background-color: #084a37;
     border: none;
@@ -31,4 +42,9 @@
 
 .dce-footer-img {
     background-color: #ffffff;
+}
+
+.dce-post-date {
+    font-size: 12px;
+    color: gray;
 }

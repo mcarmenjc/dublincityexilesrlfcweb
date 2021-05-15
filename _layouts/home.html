@@ -3,10 +3,26 @@ layout: default
 ---
 
 <div class="col-12 col-md-8">
-    <div class="h-100 p-5 bg-light border rounded-3">
-        <h2>Welcome</h2>
-        <p class="lead">Welcome to the Dublin City Exiles Rugby League Football Club Website.</p>
-        <p>Find out all you need about Dublin City Exiles RLFC, the team, fixtures, match reports and all the latest news.</p>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Welcome</h5>
+            <hr />
+            <p class="lead">Welcome to the Dublin City Exiles Rugby League Football Club Website.</p>
+            <p>Find out all you need about Dublin City Exiles RLFC, the team, fixtures, match reports and all the latest news.</p>
+        </div>
+    </div>
+    <div class="card my-3">
+        <div class="card-body">
+            <h5 class="card-title">Latest news</h5>
+            <hr />
+            {% for post in site.posts limit:5 %}
+            <div class="my-2">
+                <span class="lead"><a href="{{ post.url }}" class="dce-post-link">{{ post.title}}</a></span>
+                <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </div>
+            {% endfor %}
+            <a href="/news.html" class="btn btn-primary mt-3">See all</a>
+        </div>
     </div>
 </div>
 <div class="col-12 col-md-4">
