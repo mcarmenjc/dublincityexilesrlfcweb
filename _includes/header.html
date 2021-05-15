@@ -1,0 +1,29 @@
+<div class="row mx-1 my-3">
+    <div class="col">
+        <a href="index.html">
+            <img class="img-fluid" src="/assets/img/header.png" alt="Dublin City Exiles RLFC" />
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <ul class="nav justify-content-center">
+            {% for menu in site.data.menus %}
+            <li class="nav-item">
+                {% if menu.submenu %}
+                <a class="dce-navlink nav-link dropdown-toggle" href="#" id="{{ menu.name }}Link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{ menu.name }}
+                </a>
+                <ul class="dce-dropdownmenu dropdown-menu" aria-labelledby="{{ menu.name }}Link">
+                    {% for submenu in menu.submenu %}
+                    <li><a class="dce-navlink dce-dropdownitem dropdown-item" href="{{ submenu.link | absolute_url }}">{{ submenu.name }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <a class="dce-navlink nav-link" aria-current="page" href="{{ menu.link | absolute_url }}">{{ menu.name }}</a>
+                {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+    </div>
+</div>
