@@ -17,11 +17,11 @@ layout: default
             <hr />
             {% for post in site.posts limit:5 %}
             <div class="my-2">
-                <span class="lead"><a href="{{ post.url }}" class="dce-post-link">{{ post.title}}</a></span>
+                <span class="lead"><a href="{{ post.url | relative_url }}" class="dce-post-link">{{ post.title}}</a></span>
                 <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
             </div>
             {% endfor %}
-            <a href="/news.html" class="btn btn-primary mt-3">See all</a>
+            <a href="{{"/news.html" | relative_url}}" class="btn btn-primary mt-3">See all</a>
         </div>
     </div>
 </div>
