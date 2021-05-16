@@ -26,12 +26,17 @@ layout: default
     </div>
 </div>
 <div class="col-12 col-md-4">
-    <div class="dce-social">
-        <h4>Follow us on</h4>
+    <div class="card-body">
+        <h5 class="card-title">Follow us on</h5>
+        <hr />
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+            {% for social in site.data.socialmedia %}
+            <div class="col-4 text-center my-3">
+                <a href="{{ social.link }}" target="_blank">
+                    <i class="fab fa-{{ social.name }} fs-1"></i>
+                </a>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
