@@ -2,10 +2,10 @@
     {% for sponsor in site.data.sponsors %}
     <div class="col-6 col-md-2 align-self-center">
         {% if sponsor.url == "" %}
-        <img src="/assets/img/sponsors/{{ sponsor.logo }}" class="dce-footer-img w-100 mx-auto d-block" alt="{{ sponsor.name }}" />
+        <img src="{{"/assets/img/sponsors/sponsor.logo" | relative_url}}" class="dce-footer-img w-100 mx-auto d-block" alt="{{ sponsor.name }}" />
         {% else %}
-        <a href="{{ sponsor.url }}" target="_blank">
-            <img src="/assets/img/sponsors/{{ sponsor.logo }}" class="dce-footer-img w-100 mx-auto d-block" alt="{{ sponsor.name }}" />
+        <a href="{{ sponsor.url | relative_url }}" target="_blank">
+            <img src="{{"/assets/img/sponsors/sponsor.logo" | relative_url}}" class="dce-footer-img w-100 mx-auto d-block" alt="{{ sponsor.name }}" />
         </a>
         {% endif %}
     </div>

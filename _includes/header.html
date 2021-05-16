@@ -1,7 +1,7 @@
 <div class="row mx-1 my-3">
     <div class="col">
-        <a href="index.html">
-            <img class="img-fluid" src="/assets/img/header.png" alt="Dublin City Exiles RLFC" />
+        <a href="{{"/index.html" | relative_url}}">
+            <img class="img-fluid" src="{{"/assets/img/header.png" | relative_url}}" alt="Dublin City Exiles RLFC" />
         </a>
     </div>
 </div>
@@ -16,11 +16,11 @@
                 </a>
                 <ul class="dce-dropdownmenu dropdown-menu" aria-labelledby="{{ menu.name }}Link">
                     {% for submenu in menu.submenu %}
-                    <li><a class="dce-navlink dce-dropdownitem dropdown-item" href="{{ submenu.link | absolute_url }}">{{ submenu.name }}</a></li>
+                    <li><a class="dce-navlink dce-dropdownitem dropdown-item" href="{{ submenu.link | relative_url }}">{{ submenu.name }}</a></li>
                     {% endfor %}
                 </ul>
                 {% else %}
-                <a class="dce-navlink nav-link" aria-current="page" href="{{ menu.link | absolute_url }}">{{ menu.name }}</a>
+                <a class="dce-navlink nav-link" aria-current="page" href="{{ menu.link | relative_url }}">{{ menu.name }}</a>
                 {% endif %}
             </li>
             {% endfor %}
