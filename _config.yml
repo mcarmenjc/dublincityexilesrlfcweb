@@ -1,0 +1,6 @@
+title: Dublin City Exiles RLFC
+url: ''
+baseurl: ''
+
+paginate: 5
+paginate_path: "/page:num/news.html"
