@@ -15,7 +15,7 @@ Dublin 6w
 Tel: 00353857503872
 Email: info@dublincityexiles.com
 
-### Get in touch
+<h3>Get in touch</h3>
 
 <div class="my-4">
     <form action="mailto:info@dublincityexiles.com" method="POST" enctype="multipart/form-data" name="EmailForm">
