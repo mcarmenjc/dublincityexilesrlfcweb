@@ -11,10 +11,12 @@ layout: default
     <div class="container">
         <div class="row">
             {% for post in site.posts %}
-            <div class="col-12 col-lg-4 dce-section-bg m-3 px-5 pt-5 pb-3">
-                <div class="fs-4">{{ post.title}}</div>
-                <p class="dce-post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-                <a href="{{ post.url }}" class="btn dce-button-link fs-5">Read more</a>
+            <div class="col-12 col-lg-4">
+                <div class="dce-section-bg m-3 px-5 pt-5 pb-3">
+                    <div class="fs-4">{{ post.title}}</div>
+                    <p class="dce-post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+                    <a href="{{ post.url }}" class="btn dce-button-link fs-5">Read more</a>
+                </div>
             </div>
             {% endfor %}
         </div>
