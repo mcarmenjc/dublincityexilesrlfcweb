@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="container-fluid dce-section py-5">
+    <div class="row mb-5">
+        <div class="col text-center text-light fs-1 fw-bold">
+            PHOTOS
+        </div>
+    </div>
+    <div class="container px-0">
+        <div class="row">
+            {% for photoAlbum in site.data.photo-albums %}
+            <div class="col-12 col-lg-4">
+                <div class="dce-section-bg m-3 p-3">
+                    <img src="{{ photoAlbum.cover | prepend: "/assets/img/photos-gallery/" | relative_url }}" class="w-100 mx-auto d-block" alt="{{ photoAlbum.title }}" />
+                    <p class="text-center fs-4 text-light mt-4">{{ photoAlbum.title }}</p>
+                    <div class="text-center">
+                        <a href="{{ photoAlbum.link }}" class="btn dce-button-link fs-5" target="_blank">Go to album</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col text-center text-light fs-1 fw-bold">
+            VIDEOS
+        </div>
+    </div>
+    <div class="container px-0">
+        <div class="row">
+            {% for video in site.data.videos %}
+            <div class="col-12 col-lg-4">
+                <div class="dce-section-bg m-3 p-3">
+                    <div class="ratio ratio-16x9">
+                        {{ video.iframe }}
+                    </div>
+                    <p class="text-center fs-4 text-light mt-4">{{ video.title }}</p>
+                    <div class="text-center">
+                        <a href="{{ video.link }}" class="btn dce-button-link fs-5" target="_blank">Watch on Youtube</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
