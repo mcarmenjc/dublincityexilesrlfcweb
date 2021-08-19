@@ -1,14 +1,20 @@
 .dce-body {
     background-color: #084a37;
+    font-family: 'Oswald', sans-serif;
 }
 
 .dce-navlink{
-    color: #fac237;
+    color: #ffffff !important;
 }
 
 .dce-navlink:hover,
 .dce-navlink:focus {
-    color: #E39B27;
+    color: #fac237 !important;
+}
+
+.dce-navlink-logo {
+    display: flex;
+    align-items: center;
 }
 
 .dce-post-link{
