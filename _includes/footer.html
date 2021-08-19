@@ -1,14 +1,35 @@
-<div class="row dce-footer m-3 p-2">
-    {% for sponsor in site.data.sponsors %}
-    <div class="col-6 col-md-2 align-self-center">
-        {% assign logo = sponsor.logo %}
-        {% if sponsor.url == "" %}
-        <img src="{{sponsor.logo | prepend: "/assets/img/sponsors/" | relative_url}}" class="dce-footer-img w-100 mx-auto d-block" alt="{{ sponsor.name }}" />
-        {% else %}
-        <a href="{{ sponsor.url | relative_url }}" target="_blank">
-            <img src="{{sponsor.logo | prepend: "/assets/img/sponsors/" | relative_url}}" class="dce-footer-img w-100 mx-auto d-block" alt="{{ sponsor.name }}" />
-        </a>
-        {% endif %}
+<div class="container-fluid">
+    <div class="row m-3 p-2">
+        <div class="col fs-2 fw-bold text-light text-center">
+            <div class="fs-4 mb-3">FOLLOW US</div>
+            <div>
+                {% for social in site.data.socialmedia %}
+                <span class="mx-3 mx-lg-5">
+                    <a href="{{ social.link }}" class="dce-social-link" target="_blank">
+                        <i class="fab fa-{{ social.name }} fs-1"></i>
+                    </a>
+                </span>
+                {% endfor %}
+            </div>
+        </div>
     </div>
-    {% endfor %}
+    <div class="row m-3 p-2">
+        <div class="col fs-2 fw-bold text-light text-center">
+            SPONSORS
+        </div>
+    </div>
+    <div class="row m-3 p-2">
+        {% for sponsor in site.data.sponsors %}
+        <div class="col-6 col-md-2 align-self-center">
+            {% assign logo = sponsor.logo %}
+            {% if sponsor.url == "" %}
+            <img src="{{sponsor.logo | prepend: "/assets/img/sponsors/" | relative_url}}" class="dce-footer-img w-100 mx-auto d-block" alt="{{ sponsor.name }}" />
+            {% else %}
+            <a href="{{ sponsor.url | relative_url }}" target="_blank">
+                <img src="{{sponsor.logo | prepend: "/assets/img/sponsors/" | relative_url}}" class="dce-footer-img w-100 mx-auto d-block" alt="{{ sponsor.name }}" />
+            </a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
 </div>

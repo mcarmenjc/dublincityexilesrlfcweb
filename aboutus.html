@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="container-fluid px-0 dce-aboutus">
+    <div class="row">
+        <div class="col-12 col-lg-4 dce-section-bg">
+            <div class="p-5 text-center text-lg-end">
+                <p class="fs-1 fw-bold">ABOUT US</p>
+                <p class="fs-4 text-light">MIGHT EXILES ARE WE</p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-8 dce-section-bg">
+            <div class="p-5">
+                <p>
+                    The Dublin City Exiles were formed in 2000 when a few Australian guys based in Ireland decided to compete in the local RLI competition. The first season in 2001 saw the team training in the Pheonix Park and getting numbers down by any available means. The key people in this were Nick Bright and Carl Monopoli who chased and hassled to get people involved. The season was the first RLI season and the Exiles got to the final and were beaten in Cork in a keenly contested final. Humble start but more was to come.
+                </p>
+                <p>
+                    In 2002 the Exiles developed the player base with some valuable new additions that would prove key to the Exiles and the RLI Wolfhounds amateur team. Brett Maron joined as a coach and with him came Marty Hyde and Phil Coles. These would steer the team for the next three years. The players from Terenure got involved forming a more stable core group of players from the original season and structures were in place. The season was successful and the clashes with the Blues set the rivalry and friendship between the two clubs that exist to this day. The Exiles ran out champions in a final in Westmanstown.
+                </p>
+                <p>
+                    In 2003 the core players were still together and the new recruits from Terenure and other union players were starting to make the game their own. Players like John Sharpe, Mickey Martin, Carl Roche and Brian O'Brien were regular first choices in the Exiles and Wolfhounds team and the Wolfhounds were been managed by Brett with Marty and Phil helping out. The quality in the competition had also improved but again the Blues and the Exiles reached the final with another closely fought game in which the Exiles came out on top. The second title in a row was a testament to the quality of the team.
+                </p>
+                <p>
+                    2004 saw a transition for the Exiles. Brett, Marty, Alan and Mal McGivern all left the team to return home. Steve Szpara and Mickey Martin retired and Phil Coles managed the team, starting as manager but returning to the starting team early into the season. The new players replacing the 'old warhorses' were new to league and took time to bed in. The RLI competition saw other teams improve in great strides and the Exiles finished a disappointing 9th. Although disappointed, there were reasons to be optimistic. The club had moved from Westmanstown to Terenure and the newer players had learned a lot in the first season that would stand to them.
+                </p>
+                <p>
+                    2005 saw Richard Egan take over coaching from Phil Coles who returned to Australia. Karl McDonagh was now managing the team's off-field activities and sponsorship from Brogan Scaffolding helped get the season started in a positive manner. The core players from 2004 were still together and experience from the previous year brought the team success. New additions like Steve Nolan and Jimmy Morrison added the extra ingredient that had been missing. The Wolfhound A team was now drawn from all clubs in the competition, a competition that had improved immeasurably. Caps for Steve Nolan and Carl Roche were justly deserved and the Leinster team also contained Jimmy Morrison, Steve Scanlon and the Wolfhound representatives. A 3rd place finish in Leinster meant that we didn't reach the finals but a successful season none the less.
+                </p>
+                <p>
+                    The team continued to play throughout the 2006,07,08 and 09 seasons, showing great determination and commitment and proving to be one of the toughest teams in the league. Although being tough opposition the side was unable to mount any real challenge to the 2 dominant sides for the trophy they had previously won and successfully defended during the 2002-03 and 2003-04 seasons. Although there has been a lack of silverware in the last few years, the Exiles have still been able to produce a number of international players with both the Irish wolfhounds and the Irish student sides and with John Coleman signing professional terms with the Sheffield eagles after the 2009 season.
+                </p>
+                <p>
+                    In the 2010 season, Chris Pittman and Carl De Chenu helped with the coaching role with Richard Egan. Both players had played at the highest level in the UK and provided the team with a wealth of knowledge and experience gained throughout their playing careers. The season itself was a great success after previous years with the team winning the Leinster League and playing in the Grand Final. A defeat in the final was a disappointment but the season itself was a huge success. It did, however, see the retirement of old-timers Richard Egan and Steve Szpara.
+                </p>
+                <p>
+                    2019 was the year the exiles would bounce back from a disappointing 2018 season, in which they had not won a game by end of the season to face off with two times All Ireland winner The Longhorns RL in the All Ireland Grand Final 2019. All though the results were not in the exiles favour, they held their heads high and congratulated the Longhorns and promised them an even harder challenge the next year. There was a huge effort this year to help out Richard Egan as he was the man to do most off-field organisation for all of exiles history. He set up a management team to take over the monstrous tasks he had done himself so he could focus on coaching (As seen this worked out very well). Going into 2020 the exiles have an amazing on and off-field team that will give them a great shot at the top title.
+                </p>
+                <p>
+                    The exiles have now been playing for 20 years now and 2020 has started off as a great year for them. The interest for rugby league in Ireland and increased so much after the efforts of the exiles in 2019. The exiles have entered 2 teams into the two rugby league competitions this year (The main league and the reserve league). 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid dce-section py-3">
+    <div class="row">
+        <div class="col my-4">
+            <p class="text-center fs-1 fw-bold text-light">MEET THE TEAM</p>
+            <p class="text-center fs-5 text-light">Dublin City Exiles 2021 Management Team</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        {% for member in site.data.management-team %}
+        <div class="col-12 col-lg-3">
+            <img src="{{member.photo | prepend: "/assets/img/management/" | relative_url}}" class="w-50 mx-auto d-block" alt="{{ member.name }}" />
+            <p class="text-center fs-4 text-light mt-4">{{ member.name }}</p>
+            <p class="text-center fs-5 text-light">{{ member.title}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

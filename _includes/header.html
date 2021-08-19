@@ -1,29 +1,31 @@
-<div class="row mx-1 my-3">
-    <div class="col">
-        <a href="{{"/index.html" | relative_url}}">
-            <img class="img-fluid" src="{{"/assets/img/header.png" | relative_url}}" alt="Dublin City Exiles RLFC" />
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container mx-lg-auto mt-lg-2">
+        <a class="dce-navlink dce-navlink-logo navbar-brand mx-auto ms-lg-0" href="{{"/index.html" | relative_url}}">
+            <img src="{{"/assets/img/dublincityexiles.png" | relative_url}}" alt="" height="100" class="d-inline-block align-text-top" />
+            <span class="fs-3 ms-4 d-none d-lg-block">DUBLIN CITY EXILES</span>
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon dce-navlink"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                {% for menu in site.data.menus %}
+                <li class="nav-item mx-auto mx-lg-3">
+                    {% if menu.submenu %}
+                    <a class="dce-navlink nav-link dropdown-toggle fs-5" href="#" id="{{ menu.name }}Link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ menu.name }}
+                    </a>
+                    <ul class="dce-dropdownmenu dropdown-menu" aria-labelledby="{{ menu.name }}Link">
+                        {% for submenu in menu.submenu %}
+                        <li><a class="dce-navlink dce-dropdownitem dropdown-item fs-5" href="{{ submenu.link | relative_url }}">{{ submenu.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    <a class="dce-navlink nav-link fs-5" aria-current="page" href="{{ menu.link | relative_url }}">{{ menu.name }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col">
-        <ul class="nav justify-content-center">
-            {% for menu in site.data.menus %}
-            <li class="nav-item">
-                {% if menu.submenu %}
-                <a class="dce-navlink nav-link dropdown-toggle" href="#" id="{{ menu.name }}Link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    {{ menu.name }}
-                </a>
-                <ul class="dce-dropdownmenu dropdown-menu" aria-labelledby="{{ menu.name }}Link">
-                    {% for submenu in menu.submenu %}
-                    <li><a class="dce-navlink dce-dropdownitem dropdown-item" href="{{ submenu.link | relative_url }}">{{ submenu.name }}</a></li>
-                    {% endfor %}
-                </ul>
-                {% else %}
-                <a class="dce-navlink nav-link" aria-current="page" href="{{ menu.link | relative_url }}">{{ menu.name }}</a>
-                {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-    </div>
-</div>
+</nav>

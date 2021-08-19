@@ -1,14 +1,64 @@
 .dce-body {
     background-color: #084a37;
+    font-family: 'Oswald', sans-serif;
+}
+
+.dce-home-aboutus {
+    background-image: url("../img/home-about-us.png");
+    background-repeat: no-repeat;
+}
+
+.dce-aboutus {
+    background-image: url("../img/about-us.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dce-section-bg {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dce-section-content {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .dce-section-content {
+        width: 50%;
+    }    
+}
+
+.dce-section {
+    background-color: #16694B;
+}
+
+.dce-button-link {
+    color: #fff;
+    background-color: #084a37;
+    border-color: #084a37;
+}
+
+.dce-button-link:hover,
+.dce-button-link:focus {
+    color: #fac237 !important;
+}
+
+.dce-social-link {
+    text-decoration: none;
 }
 
 .dce-navlink{
-    color: #fac237;
+    color: #ffffff !important;
 }
 
 .dce-navlink:hover,
 .dce-navlink:focus {
-    color: #E39B27;
+    color: #fac237 !important;
+}
+
+.dce-navlink-logo {
+    display: flex;
+    align-items: center;
 }
 
 .dce-post-link{
@@ -46,7 +96,7 @@
 
 .dce-post-date {
     font-size: 12px;
-    color: gray;
+    color: white;
 }
 
 .fa-instagram {
