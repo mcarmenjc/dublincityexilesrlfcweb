@@ -2,12 +2,13 @@
 layout: default
 ---
 
-<div class="col-12">
-    <h2>{{ page.title }}</h2>
-    <p class="dce-post-date">{{ page.date | date: "%b %-d, %Y" }}</p>
-    <hr />
-    {{ content }}
-    <div class="text-center">
-        <a href="{{"/news.html" | relative_url}}" class="btn btn-primary mt-3">See all news</a>
+<div class="container-fluid dce-section">
+    <div class="container dce-section-bg py-4 px-5">
+        <div class="fs-2 fw-bold">{{ page.title }}</div>
+        <p class="dce-post-date">{{ page.date | date: "%b %-d, %Y" }}</p>
+        {{ content }}
+        <div class="text-center">
+            <a href="{{"/news.html" | relative_url}}" class="btn dce-button-link mt-3">See all news</a>
+        </div>
     </div>
 </div>
