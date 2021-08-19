@@ -1,7 +1,7 @@
 - name: HOME
   link: /index.html
 - name: ABOUT US
-  link: /club.html
+  link: /aboutus.html
 - name: NEW & EVENTS
   link: /news.html
 - name: GALLERY
