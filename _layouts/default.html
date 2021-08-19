@@ -4,14 +4,11 @@
         {% include head.html %}
     </head>
     <body class="dce-body">
-        <div class="container-fluid">
+        <div class="container-fluid px-0">
             {% include header.html %}
-            <div class="row dce-main m-3 p-3">
-                {{ content }}
-            </div>
+            {{ content }}
             {% include footer.html %}
         </div>
-
 
         <script src="{{"/assets/js/bootstrap/bootstrap.bundle.min.js" | relative_url}}"></script>
     </body>

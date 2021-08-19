@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="container-fluid dce-section py-5">
+    <div class="row mb-5">
+        <div class="col text-center text-light fs-1 fw-bold">
+            NEWS & EVENTS
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% for post in site.posts %}
+            <div class="col-12 col-lg-4">
+                <div class="dce-section-bg m-3 px-5 pt-5 pb-3">
+                    <div class="fs-4">{{ post.title}}</div>
+                    <p class="dce-post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+                    <a href="{{ post.url }}" class="btn dce-button-link fs-5">Read more</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

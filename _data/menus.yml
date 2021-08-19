@@ -1,24 +1,10 @@
-- name: Home
+- name: HOME
   link: /index.html
-- name: News & Events
-  submenu:
-    - name: News
-      link: /news.html
-    - name: Events
-      link: /events.html
-- name: Club Info
-  submenu:
-    - name: Club
-      link: /club.html
-    - name: Comitee
-      link: /comitee.html
-    - name: Documents
-      link: /documents.html
-- name: Contact Us
+- name: ABOUT US
+  link: /aboutus.html
+- name: NEW & EVENTS
+  link: /news.html
+- name: GALLERY
+  link: /gallery.html
+- name: CONTACT US
   link: /contactus.html
-- name: Photos & Videos
-  submenu:
-    - name: Photos
-      link: /photos.html
-    - name: Videos
-      link: /videos.html
