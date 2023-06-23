@@ -1,13 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container mx-lg-auto mt-lg-2">
-        <a class="dce-navlink dce-navlink-logo navbar-brand mx-auto ms-lg-0" href="{{"/index.html" | relative_url}}">
-            <img src="{{"/assets/img/dublincityexiles.png" | relative_url}}" alt="" height="100" class="d-inline-block align-text-top" />
-            <span class="fs-3 ms-4 d-none d-lg-block">DUBLIN CITY EXILES</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon dce-navlink"></span>
+<div class="dce-header-logo text-center">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <a class="mx-auto ms-lg-0" href="{{"/index.html" | relative_url}}">
+                <img src="{{"/assets/img/dublincityexiles2023.png" | relative_url}}" alt="" height="100" class="d-inline-block align-text-top" />
+            </a>
+        </div>
+    </div>
+</div>
+<nav class="dce-navbar navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 {% for menu in site.data.menus %}
                 <li class="nav-item mx-auto mx-lg-3">
@@ -15,7 +20,7 @@
                     <a class="dce-navlink nav-link dropdown-toggle fs-5" href="#" id="{{ menu.name }}Link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         {{ menu.name }}
                     </a>
-                    <ul class="dce-dropdownmenu dropdown-menu" aria-labelledby="{{ menu.name }}Link">
+                    <ul class="dropdown-menu" aria-labelledby="{{ menu.name }}Link">
                         {% for submenu in menu.submenu %}
                         <li><a class="dce-navlink dce-dropdownitem dropdown-item fs-5" href="{{ submenu.link | relative_url }}">{{ submenu.name }}</a></li>
                         {% endfor %}

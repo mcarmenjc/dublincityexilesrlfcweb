@@ -1,6 +1,25 @@
 .dce-body {
-    background-color: #084a37;
-    font-family: 'Oswald', sans-serif;
+    background-color: #ffffff;
+    font-family: Helvetica, sans-serif;
+}
+
+.dce-header-logo {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #16694B 0%, #16694B 50%, #ffffff 0%, #ffffff 50%);
+}
+
+.dce-navbar {
+    background-color: #ffffff !important;
+}
+
+.dce-navlink{
+    color: #084a37 !important;
+}
+
+.dce-navlink:hover,
+.dce-navlink:focus {
+    color: #fac237 !important;
 }
 
 .dce-home-aboutus {
@@ -45,20 +64,6 @@
 
 .dce-social-link {
     text-decoration: none;
-}
-
-.dce-navlink{
-    color: #ffffff !important;
-}
-
-.dce-navlink:hover,
-.dce-navlink:focus {
-    color: #fac237 !important;
-}
-
-.dce-navlink-logo {
-    display: flex;
-    align-items: center;
 }
 
 .dce-post-link{
