@@ -1,12 +1,19 @@
 .dce-body {
     background-color: #ffffff;
     font-family: Helvetica, sans-serif;
+    color: #084a37;
 }
 
 .dce-header-logo {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #16694B 0%, #16694B 50%, #ffffff 0%, #ffffff 50%);
+}
+
+.dce-footer-logo {
+    margin: 0;
+    padding: 0;
+    background: #16694B;
 }
 
 .dce-navbar {
@@ -20,11 +27,6 @@
 .dce-navlink:hover,
 .dce-navlink:focus {
     color: #fac237 !important;
-}
-
-.dce-home-aboutus {
-    background-image: url("../img/home-about-us.png");
-    background-repeat: no-repeat;
 }
 
 .dce-aboutus {
@@ -52,17 +54,24 @@
 }
 
 .dce-button-link {
-    color: #fff;
-    background-color: #084a37;
-    border-color: #084a37;
+    border-width: 2px;
+    font-weight: bold;
+    border-color: #fff;
 }
 
 .dce-button-link:hover,
 .dce-button-link:focus {
+    background-color: #084a37;
+    border-color: #fac237;
+}
+
+.dce-link:hover,
+.dce-link:focus {
     color: #fac237 !important;
 }
 
-.dce-social-link {
+.dce-link {
+    color: #fff;
     text-decoration: none;
 }
 
@@ -104,21 +113,6 @@
     color: white;
 }
 
-.fa-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.fa-facebook {
-    color: #4267B2;
-}
-
-.fa-twitter {
-    color: #1DA1F2;
-}
-
-.fa-youtube {
-    color: #FF0000;
+.dce-carousel-caption {
+    text-align: start !important;
 }

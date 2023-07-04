@@ -1,0 +1,25 @@
+- name: img1.JPG
+  text: 'The Rugby League experience<br />in the heart of Ireland'
+  button: 'Read more'
+  link: '/aboutus.html'
+  class: 'active'
+
+- name: img0.jpg
+  text: 'The Dublin City Exiles are Dublin-based Rugby League Club.<br />The Exiles were formed in the year 2000. <br />In 2021, they have 3 sides entered into RLI Championship.'
+  button: 'Read more'
+  link: '/aboutus.html'
+
+- name: img4.JPG
+  text: 'Contact us to join the team'
+  button: 'Contact us'
+  link: '/contactus.html'
+
+- name: img2.JPG
+  text: 'Mighty Exiles are we'
+  button: 'See more'
+  link: '/gallery.html'
+
+- name: img3.JPG
+  text: 'Mighty Exiles are we'
+  button: 'See more'
+  link: '/gallery.html'

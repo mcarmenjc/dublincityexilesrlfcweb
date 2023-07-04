@@ -1,26 +1,26 @@
 ---
 layout: default
 ---
-<div class="container-fluid px-0">
-    <img src="{{"/assets/img/home-header.png" | relative_url}}" alt="" class="img-fluid">
-</div>
-<div class="container-fluid py-0 py-lg-3 dce-section">
-    <div class="row">
-        <div class="col text-center fs-1 fw-bold text-light my-5">
-            MIGHTY EXILES ARE WE
+<div id="dce-carousel" class="carousel slide" >
+    <div class="carousel-inner">
+      {% for image in site.data.carousel %}
+        <div class="carousel-item {{ image.class }}">
+          <img src="{{image.name | prepend: "/assets/img/carousel/" | relative_url}}" class="d-block w-100" alt="...">
+          <div class="dce-carousel-caption carousel-caption d-none d-md-block">
+            <h2>{{ image.text }}</h2>
+            <a class="btn dce-link dce-button-link mt-5" role="button" aria-disabled="true" href="{{image.link | relative_url}}">{{ image.button }}</a>
+          </div>
         </div>
+      {% endfor %}
     </div>
-</div>
-<div class="container-fluid px-0 dce-home-aboutus">
-    <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-6 dce-section-bg">
-            <div class="p-5 dce-section-content">
-                <p class="fs-1 fw-bold">ABOUT US</p>
-                <p class="fs-5">The Dublin City Exiles are Dublin-based Rugby League Club. The Exiles were formed in the year 2000. In 2021, they have 3 sides entered into RLI Championship.</p>
-                <a class="btn dce-button-link fs-4 mt-5" href="{{"/aboutus.html" | relative_url}}" role="button">READ MORE</a>
-            </div>
-        </div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#dce-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#dce-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 </div>
 <div class="container-fluid dce-section">
     <div class="row">
