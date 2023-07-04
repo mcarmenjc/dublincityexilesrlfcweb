@@ -47,16 +47,19 @@ layout: default
     <div class="row">
         <div class="col my-4">
             <p class="text-center fs-1 fw-bold text-light">MEET THE TEAM</p>
-            <p class="text-center fs-5 text-light">Dublin City Exiles 2021 Management Team</p>
+            <p class="text-center fs-5 text-light">Dublin City Exiles 2023 Management Team</p>
         </div>
     </div>
-    <div class="row mt-5">
-        {% for member in site.data.management-team %}
-        <div class="col-12 col-lg-3">
-            <img src="{{member.photo | prepend: "/assets/img/management/" | relative_url}}" class="w-50 mx-auto d-block" alt="{{ member.name }}" />
-            <p class="text-center fs-4 text-light mt-4">{{ member.name }}</p>
-            <p class="text-center fs-5 text-light">{{ member.title}}</p>
+    {% for role in site.data.management-team %}
+    <div class="row mt-3 mx-5 px-5 justify-content-center">
+        <div class="col-3">
+            <ul class="list-group">
+                <li class="list-group-item dce-aboutus-role fw-bold">{{ role.title }}</li>  
+                {% for member in role.people %}
+                <li class="list-group-item fw-bold fs-5">{{ member.name }}</li>
+                {% endfor %}
+            </ul>
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
 </div>

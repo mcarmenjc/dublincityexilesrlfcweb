@@ -1,45 +1,38 @@
-- name: PAUL BKAY
-  title: Chairman
-  photo: chairman.png
-- name: LEONARDO KELLY
-  title: Hon. Secretary
-  photo: secretary.png
-- name: DON FOLEY
-  title: Hon. Treasurer
-  photo: treasurer.png
-- name: BARRY TREANOR
-  title: Club Captain
-  photo: club-captain.png
-- name: WAYNE KELLY
-  title: Men's Head Coach
-  photo: men-head-coach.png
-- name: DENNY MCCARTHY
-  title: Men's Assistant Coach
-  photo: men-assistant-coach.png
-- name: CLIFFORD NEWTON
-  title: Men's Manager
-  photo: men-manager.png
-- name: DEAN MCCORMACK
-  title: Public Liaison Officer
-  photo: public-liaison-officer.png
-- name: Lisa Rose MCCORMACK
-  title: Public Liaison Officer
-  photo: public-liaison-officer2.png
-- name: DIANE MCILHAGGA
-  title: Women's Commitee Rep
-  photo: women-commitee-rep.png
-- name: MATT KENNERSON
-  title: Women's Head Coach
-  photo: women-head-coach.png
-- name: COLUMBA KELLY
-  title: Women's Assistant Coach
-  photo: women-assistant-coach.png
-- name: JON ANDERSON
-  title: Women's Manager
-  photo: women-manager.png
-- name: GARETT MOLLOY
-  title: Men's 2nd XIII Coach
-  photo: men-2nd-coach.png
-- name: ALAN CUFFE
-  title: Men's 2nd XIII Manager
-  photo: men-2nd-manager.png
+- title: Club Chairman / Company Director
+  people: 
+    - name: Paul BKay
+- title: Club Treasurer / Company Secretary
+  people:
+    - name: Clifford Newton
+- title: Manager of Operations
+  people:
+    - name: Leonardo Kelly
+- title: Operations Panel
+  people:
+    - name: Dean McCormack
+    - name: Diane Mcilhagga
+    - name: Richie Killeen
+    - name: Barry Treanor
+- title: Advisory Committee
+  people:
+    - name: Richard Eagan
+    - name: Adam Cox
+- title: Head Coach
+  people:
+    - name: Matt Kennerson
+- title: Assistant Coaches
+  people:
+    - name: Richie Killeen
+    - name: Ray Lawless
+    - name: Paul Downey
+- title: Women's Manager
+  people:
+    - name: Dean McCormack
+    - name: Diane Mchilgga
+- title: Men's Manager
+  people:
+    - name: Alan Cuffe
+    - name: Richie Killeen
+- title: S&C (Strength & Condition) Coach
+  people:
+    - name: Chris Williams

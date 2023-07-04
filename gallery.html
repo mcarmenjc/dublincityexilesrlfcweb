@@ -16,7 +16,7 @@ layout: default
                     <img src="{{ photoAlbum.cover | prepend: "/assets/img/photos-gallery/" | relative_url }}" class="w-100 mx-auto d-block" alt="{{ photoAlbum.title }}" />
                     <p class="text-center fs-4 text-light mt-4">{{ photoAlbum.title }}</p>
                     <div class="text-center">
-                        <a href="{{ photoAlbum.link }}" class="btn dce-button-link fs-5" target="_blank">Go to album</a>
+                        <a href="{{ photoAlbum.link }}" class="btn dce-link dce-button-link fs-5" target="_blank">Go to album</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ layout: default
                     </div>
                     <p class="text-center fs-4 text-light mt-4">{{ video.title }}</p>
                     <div class="text-center">
-                        <a href="{{ video.link }}" class="btn dce-button-link fs-5" target="_blank">Watch on Youtube</a>
+                        <a href="{{ video.link }}" class="btn dce-link dce-button-link fs-5" target="_blank">Watch on Youtube</a>
                     </div>
                 </div>
             </div>
